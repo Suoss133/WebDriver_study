@@ -33,8 +33,7 @@ page = driver.find_element_by_xpath('//div[@class="page clearfix"]')
 page.location_once_scrolled_into_view
 eles = driver.find_elements_by_xpath('//ul[@class="gl-warp clearfix"]/li')
 for ele in eles:
-    partter = re.compile('[^\s].+?')
-    partter_text = partter.findall(ele.text)
-    str_context = ''.join(partter_text)
+    source_str = str(ele.text)
+    list_contexst = source_str.split('\n')
+    str_context= ' '.join(list_contexst)
     print(str_context)
-
