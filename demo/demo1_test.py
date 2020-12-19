@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.options import Options
 
 options = Options()
 options.page_load = 'eager'
-driver = webdriver.Chrome(executable_path='./driver/chromedriver',options=options)
+driver = webdriver.Chrome(executable_path='../driver/chromedriver', options=options)
 driver.get('https://www.jd.com/')
 driver.maximize_window()
 

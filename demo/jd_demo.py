@@ -2,7 +2,7 @@ import selenium
 from selenium import webdriver
 import time
 
-driver = webdriver.Chrome(executable_path='./driver/chromedriver')
+driver = webdriver.Chrome(executable_path='../driver/chromedriver')
 driver.get('https://www.jd.com/')
 driver.maximize_window()
 # driver.find_element_by_xpath('//ul[@class="elevator_list"]/li[1]').click()

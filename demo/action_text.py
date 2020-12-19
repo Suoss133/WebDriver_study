@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 import time
 
-driver = webdriver.Chrome(executable_path='./driver/chromedriver')
+driver = webdriver.Chrome(executable_path='../driver/chromedriver')
 driver.maximize_window()
 driver.get(url='https://map.baidu.com')
 time.sleep(3)
